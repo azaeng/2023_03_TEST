@@ -3,10 +3,10 @@ package Pnl;
 import javax.swing.*;
 import java.awt.*;
 
-public class One_Pannel extends JFrame {
+public class One_Panel extends JFrame {
     private JPanel redPanel;
 
-    public One_Pannel() {
+    public One_Panel() {
         setTitle("One Pannel");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(1000, 1000);
@@ -20,7 +20,7 @@ public class One_Pannel extends JFrame {
     }
 
     public static void main(String[] args) {
-    	One_Pannel frame = new One_Pannel();
+    	One_Panel frame = new One_Panel();
     	frame.setVisible(true);
     }
 }
