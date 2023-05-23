@@ -15,6 +15,10 @@ class RoundButton extends JButton {
 
         // 버튼 둥글게 만들기
         setContentAreaFilled(false);
+        
+     // 라벨의 폰트 크기 설정
+        Font labelFont = getFont();
+        setFont(labelFont.deriveFont(labelFont.getSize() + 10.0f));
     }
 
     @Override
