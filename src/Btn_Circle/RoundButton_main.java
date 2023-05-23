@@ -33,7 +33,7 @@ class RoundButton extends JButton {
         g.setColor(getForeground());
         g.drawOval(0, 0, getSize().width - 1, getSize().height - 1);
     }
-    
+
     @Override
     public boolean contains(int x, int y) {
         int radius = Math.min(getWidth(), getHeight()) / 2;
@@ -51,12 +51,11 @@ public class RoundButton_main {
         JFrame frame = new JFrame("Round Button Example");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(1000, 1000);
-        frame.setLocationRelativeTo(null); // 화면 중앙에 프레임 배치
-        frame.setLayout(new FlowLayout()); // 흐름 레이아웃 사용
+        frame.setLayout(null); // 절대 위치 레이아웃으로 설정
 
         // 둥근 버튼 생성 및 속성 설정
         RoundButton roundButton = new RoundButton("Click me");
-        roundButton.setPreferredSize(new Dimension(300, 300)); // 크기 설정
+        roundButton.setBounds(100, 300, 100, 100); // 위치와 크기 설정
         roundButton.setForeground(Color.WHITE);
         roundButton.setBackground(Color.BLUE);
 
